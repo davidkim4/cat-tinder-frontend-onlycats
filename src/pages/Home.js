@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import catGroup from "../assets/catGroup.jpg";
 
 export default class Home extends Component {
     render() {
         return (
             <>
-                <h3>Home</h3>
+                <img src={catGroup} alt="a group of kittens" />
             </>
         )
     }

@@ -16,7 +16,7 @@ export default class CatShow extends Component {
                             Hi! I am {this.props.cat.age} years old. I enjoy {this.props.cat.enjoys}.
                         </CardText>
                         <NavLink to={'/catindex'}>
-                            Back to list
+                            Back to index
                         </NavLink>
                     </Card>
                 </Col>
