@@ -25,15 +25,15 @@ const Header = (props) => {
                     <h1 className="display-3">OnlyCats</h1>
                     <p className="lead">This is a site that only has cats on it... WHAT ELSE WERE YOU EXPECTING?!</p>
                     <Navbar color="faded" light>
-                        <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
+                        <NavbarBrand href="/" className="mr-auto">OnlyCats</NavbarBrand>
                         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
                         <Collapse isOpen={!collapsed} navbar>
                             <Nav navbar>
                                 <NavItem>
-                                    <NavLink href="/components/">Components</NavLink>
+                                    <NavLink href="/catindex">Cat Index</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                    <NavLink href="/">Add a Cat</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>
