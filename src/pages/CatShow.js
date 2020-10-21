@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardTitle, Col, CardText } from 'reactstrap'
+import { Card, CardTitle, Col, CardText, Button } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 
 export default class CatShow extends Component {
@@ -15,6 +15,12 @@ export default class CatShow extends Component {
                         <CardText>
                             Hi! I am {this.props.cat.age} years old. I enjoy {this.props.cat.enjoys}.
                         </CardText>
+                        <NavLink to={`/catedit/${this.props.cat.id}`}>
+                            <Button>
+                                Edit Cat
+                            </Button>
+                            Back to index
+                        </NavLink>
                         <NavLink to={'/catindex'}>
                             Back to index
                         </NavLink>
