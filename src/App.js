@@ -25,6 +25,10 @@ export default class App extends Component {
     }
   }
 
+  createNewCat = (newCat) => {
+    console.log(newCat);
+  }
+
   render() {
     return (
       <Router>
@@ -41,7 +45,7 @@ export default class App extends Component {
             )
           }}
           />
-          <Route path="/catnew" component={CatNew} />
+          <Route path="/catnew" render={(props) => <CatNew createNewCat={this.createNewCat} />} />
           <Route path="/catedit/:id" component={CatEdit} />
           <Route component={NotFound} />
         </Switch>
