@@ -1,3 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.material-icons {
+  font-size: 6vw;
+  float: right;
+  padding-right: 11vw;
+}
+
+#footer{
+  text-align: center;
+}
+
+#header{
+  background-color: #632307;
+  color: #f3ddc6;
+  height: 7vw;
+  padding-left: 2vw;
+  padding-top: 0.5vw;
+}
+
+#header h1{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 4vw;
+}
+
+#header img{
+  width: 100%;
+  max-width: 4.5vw;
+  margin-left: 1vw;;
+}
+
+#header span{
+  float:right;
+  padding: 2vw;
+  font-size: 2vw;
+}
+
+
+#homeRow{
+  width: 100%;
+}
+
+#enter{
+  float:left;
+  width:100%;
+  max-width: 30vw;
+  margin-left:6vw;
+  margin-top:15vw;
+}
+
+
+.button{
+  font-size: 3vw;
+  color: #632307;
+  background-color:  #FFD171;
+  width: 100%;
+  border-radius: 2vw;
+  border-color: #632307;
+  transition-duration: 0.4s;
+}
+
+.button:hover{
+  color: #FFD171;
+  background-color:  #632307;
+  border-color: #FFD171;
+}
+
+#homeImg{
+  float: right;
+  width:100%;
+  max-width: 800px;
+}
+
+#impawsible {
+  clear: right;
+  text-align: center;
+  color: #632307;
+  font-size: 3vw;
+  background-color: #f3ddc6;
+  height: 12vw;
+  padding-top: 0.2vw;
+  padding-bottom: 0.2vw;
+}
+
+#impawsible p{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+#info{
+  margin-top: 3vw;
+  margin-left: 8vw;
+  margin-bottom: 30vw;
+  margin-right: 8vw;
+  height: 12vw;
+}
+
+#title h2{
+  font-size: 5vw;
+}
+
+#post{
+  max-width: 35vw;
+  background-color: #632307;
+  color: #f3ddc6;
+  padding-top: 3vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  border-radius: 12px;
+  float: left;
+  height: 39vw;
+}
+
+#post hr{
+  border: 0.1vw solid #FFD171;
+}
+
+#post p{
+  font-size: 2.5vw;
+  text-align: left;
+}
+
+#like{
+  max-width: 35vw;
+  background-color: #632307;
+  color: #f3ddc6;
+  padding-top: 3vw;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  border-radius: 12px;
+  float: right;
+  height: 39vw;
+}
+
+#like hr{
+  border: 0.1vw solid #FFD171;
+}
+
+#like p{
+  font-size: 2.5vw;
+  text-align: left;
+}
+
+#footer{
+  background-color: #632307;
+  clear: right;
+  color: #f3ddc6;
+  font-size: 1.5vw;
+  height: 2vw;
 }
