@@ -8,5 +8,5 @@ Enzyme.configure({ adapter: new Adapter() })
 
 it('Footer renders content', () => {
     const notFound = shallow(<NotFound />)
-    expect(notFound.find('h3').text()).toEqual('Not Found')
+    expect(notFound.find('h3').text()).toEqual('You seem to be lost...')
 })

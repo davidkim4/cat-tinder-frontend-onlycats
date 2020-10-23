@@ -8,5 +8,5 @@ Enzyme.configure({ adapter: new Adapter() })
 
 it('Footer renders content', () => {
     const footer = shallow(<Footer />)
-    expect(footer.find('h3').text()).toEqual('Footer')
+    expect(footer.text()).toEqual('Created by Brian Hammond, David Kim, and Diem Tran')
 })

@@ -8,5 +8,5 @@ Enzyme.configure({ adapter: new Adapter() })
 
 it('Footer renders content', () => {
     const header = shallow(<Header />)
-    expect(header.find('h1').text()).toEqual('Header')
+    expect(header.find('h1').text()).toEqual('OnlyCats')
 })

@@ -4,18 +4,26 @@ import { NavLink } from 'react-router-dom'
 
 export default class CatShow extends Component {
     render() {
+        const { cat } = this.props
+
+        console.log(cat);
+        if (!cat) {
+            console.log(cat);
+            return (<h4>no cat</h4>)
+        }
+
         return (
             <>
                 <h3>Cat Show</h3>
                 <Col sm="6">
                     <Card>
                         <CardTitle>
-                            {this.props.cat.name}
+                            {cat.name}
                         </CardTitle>
                         <CardText>
-                            Hi! I am {this.props.cat.age} years old. I enjoy {this.props.cat.enjoys}.
+                            Hi! I am {cat.age} years old. I enjoy {cat.enjoys}.
                         </CardText>
-                        <NavLink to={`/catedit/${this.props.cat.id}`}>
+                        <NavLink to={`/catedit/${cat.id}`}>
                             <Button>
                                 Edit Cat
                             </Button>
