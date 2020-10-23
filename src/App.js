@@ -21,12 +21,47 @@ export default class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      cats: mockCats
+      cats: []
     }
   }
 
-  createNewCat = (newCat) => {
-    console.log(newCat);
+  componentDidMount() {
+    this.catIndex()
+  }
+
+  catIndex = () => {
+    fetch("http://localhost:3000/cats")
+      .then(response => {
+        return response.json()
+      })
+      .then(catsArray => {
+        this.setState({ cats: catsArray })
+      })
+      .catch(errors => {
+        console.log("index errors:", errors)
+      })
+  }
+
+  createNewCat = (newcat) => {
+    return fetch("http://localhost:3000/cats", {
+      body: JSON.stringify(newcat),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    })
+      .then(response => {
+        if (response.status === 422) {
+          alert("Please check your submission.")
+        }
+        return response.json()
+      })
+      .then(payload => {
+        this.catIndex()
+      })
+      .catch(errors => {
+        console.log("create errors:", errors)
+      })
   }
 
   editCat = (editcat, id) => {
